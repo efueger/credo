@@ -1,0 +1,29 @@
+---
+engines:
+  eslint:
+    enabled: true
+    channel: stable
+    extensions:
+    - .js
+    - .jsx
+  fixme:
+    enabled: true
+  credo:
+    enabled: true
+    channel: "beta"
+    checks:
+      module_doc:
+        enabled: false
+ratings:
+  paths:
+  - "**.css"
+  - "**.js"
+  - "**.jsx"
+  - "**.ex"
+  - "**.exs"
+exclude_paths:
+- config/
+- apps/react/node_modules/
+- apps/bo/node_modules/
+- _build/
+- deps/
