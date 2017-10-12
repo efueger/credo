@@ -21,7 +21,7 @@ exclude_patterns:
   - "spec/"
 engines:
   bundler-audit:
-    enabled: true
+    enabled: false
   rubocop:
     channel: rubocop-0-50
     enabled: true
