@@ -39,4 +39,3 @@ ratings:
     - "app/**/*.rb"
     - "lib/**/*.rb"
     - "engines/**/*.rb"
-    - Gemfile.lock
