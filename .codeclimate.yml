@@ -1,29 +1,43 @@
----
+languages:
+  Ruby: true
+exclude_patterns:
+  - "**.css"
+  - "**.erb"
+  - "**.haml"
+  - "**.js"
+  - "**.svg"
+  - "**.woff"
+  - "**/assets/"
+  - "**/vendor/"
+  - "**/views/"
+  - "bin/"
+  - "config/"
+  - "db/"
+  - "db_redshift/"
+  - "docker/"
+  - "features/"
+  - "public/"
+  - "script/"
+  - "spec/"
 engines:
-  eslint:
+  bundler-audit:
     enabled: true
-    channel: stable
-    extensions:
-    - .js
-    - .jsx
+engines:
+  rubocop:
+    channel: rubocop-0-50
+    enabled: true
   fixme:
     enabled: true
-  credo:
-    enabled: true
-    channel: "beta"
-    checks:
-      module_doc:
-        enabled: false
+    config:
+      strings:
+      - FIXME
+      - BUG
+      - TODO
+      - HACK
+
 ratings:
   paths:
-  - "**.css"
-  - "**.js"
-  - "**.jsx"
-  - "**.ex"
-  - "**.exs"
-exclude_paths:
-- config/
-- apps/react/node_modules/
-- apps/bo/node_modules/
-- _build/
-- deps/
+    - "app/**/*.rb"
+    - "lib/**/*.rb"
+    - "engines/**/*.rb"
+    - Gemfile.lock
