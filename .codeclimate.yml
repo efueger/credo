@@ -25,8 +25,8 @@ engines:
   bundler-audit:
     enabled: false
   rubocop:
-    channel: rubocop-0-50
-    enabled: true
+#    channel: rubocop-0-50
+    enabled: false
   fixme:
     enabled: true
     config:
