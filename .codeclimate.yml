@@ -1,4 +1,4 @@
-version: "2"
+# version: "2"
 exclude_patterns:
   - "**.css"
   - "**.erb"
@@ -21,7 +21,7 @@ exclude_patterns:
   - "public/"
   - "script/"
   - "spec/"
-plugins:
+engines:
   bundler-audit:
     enabled: false
   rubocop:
@@ -36,3 +36,9 @@ plugins:
       - TODO
       - HACK
       
+ratings:
+  paths:
+    - "app/**/*.rb"
+    - "lib/**/*.rb"
+    - "engines/**/*.rb"
+    - Gemfile.lock
