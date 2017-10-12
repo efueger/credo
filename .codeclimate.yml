@@ -19,10 +19,9 @@ exclude_patterns:
   - "public/"
   - "script/"
   - "spec/"
-plugins:
-  bundler-audit:
-    enabled: true
 engines:
+  bundler-audit:
+    enabled: truu
   rubocop:
     channel: rubocop-0-50
     enabled: true
