@@ -19,7 +19,7 @@ exclude_patterns:
   - "public/"
   - "script/"
   - "spec/"
-engines:
+plugins:
   bundler-audit:
     enabled: true
 engines:
