@@ -33,9 +33,4 @@ plugins:
       - BUG
       - TODO
       - HACK
-
-ratings:
-  paths:
-    - "app/**/*.rb"
-    - "lib/**/*.rb"
-    - "engines/**/*.rb"
+      
