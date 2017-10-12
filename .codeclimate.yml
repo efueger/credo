@@ -7,7 +7,7 @@ exclude_patterns:
   - "**.svg"
   - "**.woff"
 #  - "**/credo/"
-  - "**/credo/**/*"
+#  - "**/credo/**/*"
 #  - "**/credo/**/"
   - "**/assets/"
   - "**/vendor/"
