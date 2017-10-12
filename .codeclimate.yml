@@ -8,7 +8,7 @@ exclude_patterns:
   - "**.woff"
 #  - "**/credo/"
 #  - "**/credo/**/*"
-  - "**/credo/**/"
+  - "**/credo/**"
   - "**/assets/"
   - "**/vendor/"
   - "**/views/"
