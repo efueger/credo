@@ -1,6 +1,4 @@
 version: "2"
-languages:
-  Ruby: true
 exclude_patterns:
   - "**.css"
   - "**.erb"
