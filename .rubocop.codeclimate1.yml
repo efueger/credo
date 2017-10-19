@@ -1,0 +1,21 @@
+inherit_from:
+  - default.yml
+
+AllCops:
+  Exclude:
+    - db/schema.rb
+
+Style/AccessorMethodName:
+  Description: Check the naming of accessor methods for get_/set_.
+  Enabled: false
+
+Style/Alias:
+  Description: 'Use alias_method instead of alias.'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#alias-method'
+  Enabled: false
+
+Style/ArrayJoin:
+  Description: 'Use Array#join instead of Array#*.'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#array-join'
+  Enabled: false
+
