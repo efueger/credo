@@ -1,0 +1,17 @@
+inherit_from: .rubocop.codeclimate.yml
+
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'db/schema.rb'
+    - 'vendor/**/*'
+
+Rails:
+  Enabled: true
+
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - '*.gemspec'
+    - Gemfile
+    - Rakefile
+    - db/migrate/*
