@@ -2,6 +2,7 @@ prepare:
   fetch:
   - url: "https://raw.githubusercontent.com/efueger/credo/master/.rubocop.codeclimate.yml"
 
+prepare:
   fetch:
   - url: "https://raw.githubusercontent.com/efueger/credo/master/.rubocop.default.yml"
     path: ".rubocop.final.yml"
