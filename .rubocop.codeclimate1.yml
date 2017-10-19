@@ -1,5 +1,5 @@
 inherit_from:
-  - default.yml
+  - .rubocop.default.yml
 
 AllCops:
   Exclude:
