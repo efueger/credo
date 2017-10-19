@@ -1,3 +1,11 @@
+prepare:
+  fetch:
+  - url: "https://raw.githubusercontent.com/efueger/credo/master/.rubocop.codeclimate.yml"
+prepare:
+  fetch:
+  - url: "https://raw.githubusercontent.com/efueger/credo/master/.rubocop.default.yml"
+    path: ".rubocop.final.yml"
+
 
 # version: "2"
 exclude_patterns:
@@ -31,6 +39,7 @@ engines:
   fixme:
     enabled: true
     config:
+      file: .rubocop.final.yml
       strings:
       - FIXME
       - BUG
